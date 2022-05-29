@@ -1,0 +1,32 @@
+//C++ code to find the location of string s2 in string s1 if present
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void find(string a,string b){
+	//find position of string b in a
+	int loc = a.find(b);
+
+	//check if position is -1 or not
+	if (loc != string::npos){
+		cout << "first_" << b << "_found at position " << loc << endl;
+	}
+	else{
+		cout << "NOT PRESENT" << endl;
+	}
+}
+
+int main() {
+	// Given strings
+	string s1,s2,s3;
+	getline(cin,s1);
+	getline(cin,s2);
+
+  find(s1,s2);
+
+	return 0;
+}
