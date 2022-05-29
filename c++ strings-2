@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void find(string a,string b){
+void found(string a,string b){
 	//find position of string b in a
 	int loc = a.find(b);
 
@@ -26,7 +26,7 @@ int main() {
 	getline(cin,s1);
 	getline(cin,s2);
 
-  find(s1,s2);
+  found(s1,s2);
 
 	return 0;
 }
