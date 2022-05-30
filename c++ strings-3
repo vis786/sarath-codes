@@ -1,0 +1,22 @@
+// C++ code to revere a portion of a substring
+
+#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	string s1,s2,s3;
+	/* We have to locate string s2 in string s1 and reverse only that part */ 
+	getline(cin >> ws,s1);
+	getline(cin >> ws,s2);
+
+	int loc = s1.find(s2);
+	if ( loc != string::npos ){
+		s3 = s1;
+		reverse(s1.begin() + loc,s1.begin() + loc + s2.length());
+		cout << s3 << endl; // printing original string
+		cout << s1 << endl; // printing final string
+	}
+	return 0;
+}
